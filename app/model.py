@@ -1,5 +1,5 @@
 import torch
-from drqn_model import DRQN
+from app.drqn_model import DRQN
 
 OBS_DIM = 5
 ACTION_DIM = 5

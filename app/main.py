@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from model import MitigationModel
+from app.model import MitigationModel
 
 app = FastAPI()
 
