@@ -1,4 +1,4 @@
-# 🛡️ Adaptive Application-Layer DDoS Mitigation using Deep Reinforcement Learning
+#  Adaptive Application-Layer DDoS Mitigation using Deep Reinforcement Learning
 
 > **An intelligent, cost-aware DDoS defense framework powered by Deep Recurrent Q-Networks (DRQN), deployed as a production-ready FastAPI microservice with full CI/CD automation.**
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Problem Statement](#-problem-statement)
 2. [How It Works — Conceptual Overview](#-how-it-works--conceptual-overview)
@@ -29,7 +29,7 @@
 
 ---
 
-## ❗ Problem Statement
+##  Problem Statement
 
 Traditional DDoS mitigation systems depend on **static rules** or **signature-based detection**. These approaches fail against modern **application-layer (Layer 7) attacks** because:
 
@@ -45,9 +45,9 @@ Traditional Approach:
 │       ↓                                             │
 │  Static Rule Engine  ──→  Block / Allow (Fixed)     │
 │                                                     │
-│  ❌ Cannot adapt to new patterns                    │
-│  ❌ High false positive rate                        │
-│  ❌ Ignores temporal context                        │
+│     Cannot adapt to new patterns                    │
+│     High false positive rate                        │
+│     Ignores temporal context                        │
 └─────────────────────────────────────────────────────┘
 
 This Project's Approach:
@@ -58,15 +58,15 @@ This Project's Approach:
 │       ↑                                             │
 │  Learns from environment feedback (reward signal)   │
 │                                                     │
-│  ✅ Adapts to unseen attack patterns               │
-│  ✅ Balances security cost vs. user impact          │
-│  ✅ Retains temporal context via LSTM memory        │
+│     Adapts to unseen attack patterns                │
+│     Balances security cost vs. user impact          │
+│     Retains temporal context via LSTM memory        │
 └─────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 💡 How It Works — Conceptual Overview
+##  How It Works — Conceptual Overview
 
 This system models DDoS mitigation as a **sequential decision-making problem** under **partial observability**, solved using **Deep Reinforcement Learning (DRL)**.
 
@@ -108,7 +108,7 @@ At each timestep, the agent:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The full system spans training, deployment, and CI/CD automation across three layers:
 
@@ -154,7 +154,7 @@ The full system spans training, deployment, and CI/CD automation across three la
 
 ---
 
-## 🔧 Solution Design
+##  Solution Design
 
 ### Application-Layer Simulation Environment
 
@@ -216,7 +216,7 @@ Action Costs:
 
 ---
 
-## 🧠 Reinforcement Learning Framework
+##  Reinforcement Learning Framework
 
 ### From DQN to DRQN
 
@@ -271,7 +271,7 @@ Initialize DRQN, Replay Buffer, Target Network
 
 ---
 
-## 🔩 Model Architecture
+##  Model Architecture
 
 ```
 Input: Observation Vector  [5 features per timestep]
@@ -391,7 +391,7 @@ ddos-mitigation-drl/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -451,7 +451,7 @@ pytest tests/ -v
 
 ---
 
-## 🔁 CI/CD Pipeline
+##  CI/CD Pipeline
 
 Every push to the `main` branch automatically triggers the following pipeline:
 
@@ -501,7 +501,7 @@ The commit SHA tag ensures **full traceability** — every deployed image maps t
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Metric | Observation |
 |---|---|
@@ -527,7 +527,7 @@ only when justified by the reward signal.
 
 ---
 
-## ⚠️ Limitations & Future Work
+##  Limitations & Future Work
 
 ### Current Limitations
 
@@ -541,7 +541,7 @@ only when justified by the reward signal.
 
 ```
 Phase 1 (Current)
-└─→ Single-server DRQN with simulated environment ✅
+└─→ Single-server DRQN with simulated environment 
 
 Phase 2 (Planned)
 └─→ Real traffic dataset integration (CAIDA, CIC-DDoS2019)
@@ -558,7 +558,7 @@ Phase 4 (MLOps)
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Vissakan V**
 M.Tech — Computer Science and Engineering
